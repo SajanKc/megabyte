@@ -23,11 +23,11 @@ img {
 }
 
 a {
-  color: var(--primary);
+  color: var(--darkwhite);
 }
 
 a:hover {
-  color: var(--primary);
+  color: var(--darkwhite);
   text-decoration: none;
 }
 
@@ -61,6 +61,16 @@ footer {
   font-size: 32px;
   font-weight: normal;
   color: var(--black);
+}
+
+@media (max-width: 768px) {
+  .section__heading {
+    font-size: 38px;
+  }
+
+  .section__subHeading {
+    font-size: 22px;
+  }
 }
 
 .section__heading.darkwhite,
@@ -116,7 +126,85 @@ footer {
   background-color: transparent;
 }
 
+.btn__small:hover,
+.btn__large:hover,
+.btn__large--outline:hover {
+  color: var(--darkwhite) !important;
+  background-color: var(--secondary);
+  cursor: pointer;
+}
+
 /* Hero Slider */
+
+/* About Us / Case Studies*/
+
+.about__left,
+.case__right {
+  padding: 0;
+  width: 100%;
+}
+
+.case__right {
+  background-color: var(--secondary);
+  padding: 20px;
+}
+
+.about__right,
+.case__left {
+  background-color: var(--darkwhite);
+}
+
+.about__right > div,
+.case__left > div {
+  margin: auto 0;
+  max-width: 560px;
+  padding: 50px 15px;
+}
+
+.about__img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.section__description a {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+.section__description a:hover {
+  color: var(--secondary);
+  text-decoration: underline;
+}
+
+#case__slider .case__item img {
+  display: block;
+  width: 100%;
+  height: 400px;
+}
+
+.case__heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--darkwhite);
+  font-size: 38px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .about__right > div,
+  .case__left > div {
+    padding-left: 0;
+    padding-right: 0;
+    margin: auto;
+  }
+
+  .case__heading {
+    margin-top: 0;
+  }
+}
 
 /* Our Services */
 
@@ -175,7 +263,7 @@ footer {
 }
 
 .owl-item.active.center > div .client__card {
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.2);
   opacity: 1;
 }
 
@@ -186,7 +274,7 @@ footer {
   align-items: center;
   padding: 15px 10px;
   margin: 0 10px;
-  border: 3px solid rgba(238, 238, 238, 1);
+  border: 1px solid rgba(238, 238, 238, 1);
   opacity: 0.2;
 }
 
@@ -250,6 +338,7 @@ footer {
 }
 
 /* Footer Section */
+
 .section__footer {
   padding-bottom: 10px !important;
 }
@@ -274,6 +363,7 @@ footer {
 }
 
 /* Copyright */
+
 .copyright__description {
   font-size: 14px;
 }
@@ -288,6 +378,10 @@ footer {
 
 .social__link {
   color: var(--darkwhite);
+}
+
+.social__link:hover {
+  color: var(--primary);
 }
 
 .social__link .fa {
