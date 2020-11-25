@@ -102,6 +102,19 @@ footer {
   background-color: var(--primary);
 }
 
+.btn__small--nav {
+  font-size: 18px;
+  padding: 5px 15px;
+  max-width: 160px;
+  text-align: center;
+  border: none;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  color: var(--darkwhite);
+  background-color: var(--primary);
+}
+
 .btn__large {
   font-size: 20px;
   padding: 5px 20px;
@@ -132,6 +145,52 @@ footer {
   color: var(--darkwhite) !important;
   background-color: var(--secondary);
   cursor: pointer;
+}
+
+/* Navbar Section */
+
+.nav__fixer {
+  height: 84px;
+}
+
+.nav-link {
+  font-size: 18px !important;
+}
+
+.social__media--nav {
+  height: 28px;
+  width: 28px;
+  border: 2px solid var(--darkwhite);
+  padding: 2px;
+  font-size: 14px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav__button {
+  padding-top: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+@media (max-width: 993px) {
+  .social__media {
+    display: none !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .section__navbar {
+    padding: 0.5rem 3rem !important;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1200px){
+  .nav-link{
+    padding-right: 0rem !important;
+  }
 }
 
 /* Hero Slider */
