@@ -65,7 +65,7 @@ footer {
 
 @media (max-width: 768px) {
   .section__heading {
-    font-size: 38px;
+    font-size: 33px;
   }
 
   .section__subHeading {
@@ -187,13 +187,55 @@ footer {
   }
 }
 
-@media (min-width: 1024px) and (max-width: 1200px){
-  .nav-link{
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .nav-link {
     padding-right: 0rem !important;
   }
 }
 
 /* Hero Slider */
+
+#hero__slider.owl {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(80vh - 84px);
+}
+
+.section__hero {
+  height: calc(100vh - 84px);
+  background-color: var(--secondary);
+}
+
+.hero__details {
+  max-width: 390px;
+  min-height: 310px;
+}
+
+.hero__details .btn__large:hover,
+.btn__small--nav:hover {
+  color: var(--secondary) !important;
+  background-color: var(--darkwhite);
+}
+
+.section__hero .section__heading {
+  color: var(--white);
+}
+
+.section__hero .section__heading span {
+  color: var(--primary);
+}
+
+.section__hero .section__description {
+  color: var(--darkwhite);
+  margin: 40px 0;
+}
+
+@media (max-width: 700px) {
+  .hideme {
+    display: none !important;
+  }
+}
 
 /* About Us / Case Studies*/
 
@@ -218,6 +260,7 @@ footer {
   margin: auto 0;
   max-width: 560px;
   padding: 50px 15px;
+  text-align: justify;
 }
 
 .about__img {
@@ -451,4 +494,15 @@ footer {
   .padding__fixer {
     padding-left: 0 !important;
   }
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  width: 50px !important;
+  border-radius: 0 !important;
+  margin: 0 !important;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background-color: var(--primary) !important;
 }

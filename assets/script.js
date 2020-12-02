@@ -1,5 +1,27 @@
 // Owl Carousel
 $(document).ready(function () {
+  // Hero Slider
+  $("#hero__slider").owlCarousel({
+    navigation: true,
+    autoplay: true,
+    loop: true,
+    paginationSpeed: 400,
+    autoplayHoverPause: false,
+    singleItem: true,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      576: {
+        items: 1,
+      },
+      1024: {
+        items: 1,
+      },
+    },
+  });
+
   // Case Studies Slider
   $("#case__slider").owlCarousel({
     navigation: true,
